@@ -193,22 +193,22 @@
     </div>
     <div class="menu">
         <div class="item">
-            <img src="tiffins.jpg" alt="Tiffins"> <!-- Updated image source -->
+            <img src="myproject/tiffins.jpg" alt="Tiffins"> <!-- Updated image source -->
             <h3>Tiffins</h3>
             <button onclick="showItems('tiffins')">View Items</button>
         </div>
         <div class="item">
-            <img src="food.jpg" alt="Food">
+            <img src="myproject/food.jpg" alt="Food">
             <h3>Food</h3>
             <button onclick="showItems('food')">View Items</button>
         </div>
         <div class="item">
-            <img src="snacks.jpg" alt="Snacks">
+            <img src="myproject/snacks.jpg" alt="Snacks">
             <h3>Snacks</h3>
             <button onclick="showItems('snacks')">View Items</button>
         </div>
         <div class="item">
-            <img src="starters.jpg" alt="Starters">
+            <img src="myproject/starters.jpg" alt="Starters">
             <h3>Starters</h3>
             <button onclick="showItems('starters')">View Items</button>
         </div>
@@ -227,36 +227,36 @@
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
         let tiffinsItems = [
-            { name: 'Idli', price: 10, image: 'D:\\4216\\FEAD PROJECT\\idli.jpeg' },
-            { name: 'Vada', price: 15, image: 'D:\\4216\\FEAD PROJECT\\vada.jpg' },
-            { name: 'Puri', price: 30, image: 'D:\\4216\\FEAD PROJECT\\puri.jpg' },
-            { name: 'Punukulu', price: 15, image: 'D:\\4216\\FEAD PROJECT\\punukulu.webp' },
-            { name: 'Bonda', price: 15, image: 'D:\\4216\\FEAD PROJECT\\bonda.jpg' }
+            { name: 'Idli', price: 10, image: 'myproject/D:\\4216\\FEAD PROJECT\\idli.jpeg' },
+            { name: 'Vada', price: 15, image: 'myproject/D:\\4216\\FEAD PROJECT\\vada.jpg' },
+            { name: 'Puri', price: 30, image: 'myproject/D:\\4216\\FEAD PROJECT\\puri.jpg' },
+            { name: 'Punukulu', price: 15, image: 'myproject/D:\\4216\\FEAD PROJECT\\punukulu.webp' },
+            { name: 'Bonda', price: 15, image: 'myproject/D:\\4216\\FEAD PROJECT\\bonda.jpg' }
         ];
 
         let foodItems = [
-            { name: 'Biryani', price: 199, image:'D:\\4216\\FEAD PROJECT\\biriyani.jpg' },
-            { name: 'Fried Rice', price: 119, image: 'D:\\4216\\FEAD PROJECT\\fried rice.jpg'},
-            { name: 'Veg Meal', price: 99, image:  'D:\\4216\\FEAD PROJECT\\veg meal.jpeg'},
-            { name: 'Non-Veg Meal', price: 179, image: 'D:\\4216\\FEAD PROJECT\\non veg meal.jpg'},
-            { name: 'Butter Chicken', price: 299, image: 'D:\\4216\\FEAD PROJECT\\butter chicken.jpg' },
-            { name: 'Paneer Butter Masala', price: 149, image: 'D:\\4216\\FEAD PROJECT\\panner butter masala.jpg'}
+            { name: 'Biryani', price: 199, image:'myproject/D:\\4216\\FEAD PROJECT\\biriyani.jpg' },
+            { name: 'Fried Rice', price: 119, image: 'myproject/D:\\4216\\FEAD PROJECT\\fried rice.jpg'},
+            { name: 'Veg Meal', price: 99, image:  'myproject/D:\\4216\\FEAD PROJECT\\veg meal.jpeg'},
+            { name: 'Non-Veg Meal', price: 179, image: 'myproject/D:\\4216\\FEAD PROJECT\\non veg meal.jpg'},
+            { name: 'Butter Chicken', price: 299, image: 'myproject/D:\\4216\\FEAD PROJECT\\butter chicken.jpg' },
+            { name: 'Paneer Butter Masala', price: 149, image: 'myproject/D:\\4216\\FEAD PROJECT\\panner butter masala.jpg'}
         ];
 
         let snacksItems = [
-            { name: 'Samosa', price: 20, image: 'D:\\4216\\FEAD PROJECT\\samosa.jpg'},
-            { name: 'French Fries', price: 59, image: 'D:\\4216\\FEAD PROJECT\\french fries.jpg' },
-            { name: 'Spring Rolls', price: 99, image:  'D:\\4216\\FEAD PROJECT\\spring rolls.jpeg'},
-            { name: 'Shawarma', price: 130, image: 'D:\\4216\\FEAD PROJECT\\shawarma.jpg' },
-            { name: 'Gobi Manchurian', price: 99, image: 'D:\\4216\\FEAD PROJECT\\gobi manchurya.jpg' }
+            { name: 'Samosa', price: 20, image: 'myproject/D:\\4216\\FEAD PROJECT\\samosa.jpg'},
+            { name: 'French Fries', price: 59, image: 'myproject/D:\\4216\\FEAD PROJECT\\french fries.jpg' },
+            { name: 'Spring Rolls', price: 99, image:  'myproject/D:\\4216\\FEAD PROJECT\\spring rolls.jpeg'},
+            { name: 'Shawarma', price: 130, image: 'myproject/D:\\4216\\FEAD PROJECT\\shawarma.jpg' },
+            { name: 'Gobi Manchurian', price: 99, image: 'myproject/D:\\4216\\FEAD PROJECT\\gobi manchurya.jpg' }
         ];
 
         let startersItems = [
-            { name: 'Chicken Wings', price: 199, image: 'D:\\4216\\FEAD PROJECT\\chicken wings.jpg' },
-            { name: 'Paneer Tikka', price: 199, image: 'D:\\4216\\FEAD PROJECT\\panner tikka.jpg' },
-            { name: 'Chilli Chicken', price: 249, image: 'D:\\4216\\FEAD PROJECT\\chilli chicken.jpg' },
-            { name: 'chicken 65', price: 299 , image: 'D:\\4216\\FEAD PROJECT\\chicken 65.jpg'},
-            { name: 'Fish Fry', price: 299, image: 'D:\\4216\\FEAD PROJECT\\fish fry.jpg'}
+            { name: 'Chicken Wings', price: 199, image: 'myproject/D:\\4216\\FEAD PROJECT\\chicken wings.jpg' },
+            { name: 'Paneer Tikka', price: 199, image: 'myproject/D:\\4216\\FEAD PROJECT\\panner tikka.jpg' },
+            { name: 'Chilli Chicken', price: 249, image: 'myproject/D:\\4216\\FEAD PROJECT\\chilli chicken.jpg' },
+            { name: 'chicken 65', price: 299 , image: 'myproject/D:\\4216\\FEAD PROJECT\\chicken 65.jpg'},
+            { name: 'Fish Fry', price: 299, image: 'myproject/D:\\4216\\FEAD PROJECT\\fish fry.jpg'}
         ];
 
         function showItems(category) {
